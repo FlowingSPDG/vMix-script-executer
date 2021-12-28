@@ -59,6 +59,7 @@ func main() {
 		}
 		if len(f) != 2 {
 			s.SendMessageReply(m.ChannelID, messageInvalidArgs, m.ID) // 引数の数が正しくない
+			return
 		}
 		scriptName := f[1]
 		s.SendMessageReply(m.ChannelID, fmt.Sprintf(messageWillExctuteScript, scriptName), m.ID) // 実行しますメッセージ
