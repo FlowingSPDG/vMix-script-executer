@@ -40,7 +40,7 @@ func main() {
 
 	me, err := s.Me()
 	if err != nil {
-		log.Println("Failed to retrieve myself")
+		log.Println("Failed to retrieve myself:", err)
 		return
 	}
 
